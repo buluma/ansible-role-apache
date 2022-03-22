@@ -23,8 +23,6 @@ molecule:
       - image: "fedora-systemd"
         tag: "latest"
       - image: "amazonlinux"
-        tag: "1"
-      - image: "amazonlinux"
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
