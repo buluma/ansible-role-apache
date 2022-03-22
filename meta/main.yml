@@ -1,0 +1,34 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: apache
+  author: geerlingguy
+  description: Apache 2.x for Linux.
+  company: "Midwestern Mac, LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Amazon
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - web
+    - apache
+    - webserver
+    - html
+    - httpd
+
+allow_duplicates: true
