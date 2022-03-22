@@ -45,7 +45,7 @@ jobs:
           - image: "fedora-systemd"
             tag: "latest"
           - image: "amazonlinux"
-            tag: "1"
+            tag: "latest"
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
