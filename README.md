@@ -138,8 +138,8 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-license (BSD, MIT)
+license (Apache-2.0)
 
 ## [Author Information](#author-information)
 
-[geerlingguy](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
