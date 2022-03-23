@@ -2,9 +2,9 @@
 
 Apache 2.x for Linux.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-apache/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apache/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-apache/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-apache)|[![quality](https://img.shields.io/ansible/quality/54595)](https://galaxy.ansible.com/buluma/apache)|[![downloads](https://img.shields.io/ansible/role/d/54595)](https://galaxy.ansible.com/buluma/apache)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-apache/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apache/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-apache/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-apache)|[![quality](https://img.shields.io/ansible/quality/54595)](https://galaxy.ansible.com/buluma/apache)|[![downloads](https://img.shields.io/ansible/role/d/54595)](https://galaxy.ansible.com/buluma/apache)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -30,7 +30,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
       changed_when: false
 
   roles:
-    - role: geerlingguy.apache
+    - role: buluma.apache
 ```
 
 
