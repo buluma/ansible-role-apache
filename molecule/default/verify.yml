@@ -9,13 +9,6 @@
     - ../../defaults/main.yml
 
   tasks:
-    - name: check if ports are open
-      ansible.builtin.wait_for:
-        port: "{{ item }}"
-        timeout: 2
-      loop:
-        - "8080"
-
     - name: place sample index.html
       ansible.builtin.copy:
         content: "Hello World!"
