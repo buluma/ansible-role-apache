@@ -2,36 +2,8 @@
 - name: Verify
   hosts: all
   become: yes
-  gather_facts: yes
-
-  vars_files:
-    # - ../../vars/main.yml
-    - ../../defaults/main.yml
+  gather_facts: no
 
   tasks:
-
-    - name: see if TRACE option returns 405 or 404
-      ansible.builtin.uri:
-        url: "http://127.0.0.1:8080/"
-        method: TRACE
-        status_code:
-          - 405
-          - 404
-
-    - name: install passlib
-      ansible.builtin.package:
-        name: python3-passlib
-        state: present
-
-    - name: create htpasswd file
-      community.general.htpasswd:
-        path: /password.file
-        name: my_user
-        password: 'my_password'
-        mode: "0640"
-
-    - name: see if authentication is required
-      ansible.builtin.uri:
-        url: http://127.0.0.1:8080/my_directory
-        status_code:
-          - 401
+    - name: check if connection still works
+      ansible.builtin.ping:
