@@ -15,7 +15,8 @@
   when: apache_packages is not defined
 
 # Setup/install tasks.
-- ansible.builtin.include_tasks: "setup-{{ ansible_os_family }}.yml"
+- name: Setup/install tasks.
+  ansible.builtin.include_tasks: "setup-{{ ansible_os_family }}.yml"
 
 # Figure out what version of Apache is installed.
 - name: Get installed version of Apache.
@@ -45,3 +46,5 @@
     name: "{{ apache_service }}"
     state: "{{ apache_state }}"
     enabled: "{{ apache_enabled }}"
+  changed_when: false
+  failed_when: false
