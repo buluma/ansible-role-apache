@@ -1,9 +1,9 @@
 ---
 # Include variables and define needed variables.
-- name: include OS-specific variables.
+- name: include os-specific variables.
   ansible.builtin.include_vars: "{{ ansible_os_family }}.yml"
 
-- name: include variables for Amazon Linux.
+- name: include variables for amazon linux.
   ansible.builtin.include_vars: "AmazonLinux.yml"
   when:
     - ansible_distribution == "Amazon"
