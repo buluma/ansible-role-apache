@@ -23,6 +23,12 @@ molecule:
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
+        tag: "35"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "amazonlinux"
+        tag: "1"
+      - image: "amazonlinux"
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
@@ -34,6 +40,8 @@ molecule:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
 
 testing:
   stage: test
@@ -52,6 +60,8 @@ testing:
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
+        tag: "35"
+      - image: "fedora-systemd"
         tag: "latest"
       - image: "amazonlinux"
         tag: "1"
@@ -67,6 +77,8 @@ testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
 
 galaxy:
   stage: deploy
@@ -89,6 +101,8 @@ role_testing:
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
+        tag: "35"
+      - image: "fedora-systemd"
         tag: "latest"
       - image: "amazonlinux"
         tag: "1"
@@ -104,6 +118,8 @@ role_testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
 
 release_job:
   stage: .post
