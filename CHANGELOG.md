@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-apache/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/molecule-action from 5.0.1 to 5.0.4 [\#8](https://github.com/buluma/ansible-role-apache/pull/8) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.1.2](https://github.com/buluma/ansible-role-apache/tree/0.1.2) (2022-04-23)
 
 [Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.1...0.1.2)
