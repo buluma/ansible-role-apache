@@ -11,3 +11,7 @@ exclude_paths:
   - ./.cache
   - ./.github
   - ./requirements.yml
+
+warn_list:
+  - no-free-form
+  - no-changed-when
