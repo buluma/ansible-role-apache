@@ -1,5 +1,5 @@
 ---
-- name: Configure apache.
+- name: configure-RedHat | Configure apache.
   ansible.builtin.lineinfile:
     dest: "{{ apache_server_root }}/conf/{{ apache_daemon }}.conf"
     regexp: "{{ item.regexp }}"
@@ -9,7 +9,7 @@
   with_items: "{{ apache_ports_configuration_items }}"
   notify: Restart apache
 
-- name: Check whether certificates defined in vhosts exist.
+- name: configure-RedHat | Check whether certificates defined in vhosts exist.
   ansible.builtin.stat: path={{ item.certificate_file }}
   register: apache_ssl_certificates
   with_items: "{{ apache_vhosts_ssl }}"
