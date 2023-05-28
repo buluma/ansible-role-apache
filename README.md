@@ -2,9 +2,9 @@
 
 Apache 2.x for Linux.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-apache/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apache/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-apache/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-apache)|[![quality](https://img.shields.io/ansible/quality/54595)](https://galaxy.ansible.com/buluma/apache)|[![downloads](https://img.shields.io/ansible/role/d/54595)](https://galaxy.ansible.com/buluma/apache)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-apache/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apache/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-apache/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-apache)|[![quality](https://img.shields.io/ansible/quality/54595)](https://galaxy.ansible.com/buluma/apache)|[![downloads](https://img.shields.io/ansible/role/d/54595)](https://galaxy.ansible.com/buluma/apache)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -34,7 +34,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
     - role: buluma.apache
 ```
 
-The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/prepare.yml):
+The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/main/molecule/default/prepare.yml):
 
 ```yaml
 ---
@@ -51,7 +51,7 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 
 ## [Role Variables](#role-variables)
 
-The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/master/defaults/main.yml):
+The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/main/defaults/main.yml):
 
 ```yaml
 ---
@@ -119,7 +119,7 @@ apache_packages_state: present
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-apache/blob/master/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-apache/blob/main/requirements.txt).
 
 ## [State of used roles](#state-of-used-roles)
 
@@ -134,7 +134,6 @@ The following roles are used to prepare a system. You can prepare your system in
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-apache/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -157,6 +156,10 @@ The minimum version of Ansible required is 2.4, tests have been done to:
 
 If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-apache/issues)
 
+## [Changelog](#changelog)
+
+[Role History](https://github.com/buluma/ansible-role-apache/blob/master/CHANGELOG.md)
+
 ## [License](#license)
 
 [Apache-2.0](https://github.com/buluma/ansible-role-apache/blob/master/LICENSE).
@@ -166,3 +169,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 [buluma](https://buluma.github.io/)
 
 Please consider [sponsoring me](https://github.com/sponsors/buluma).
+
+### [Special Thanks](#special-thanks)
+
+Template inspired by [Robert de Bock](https://github.com/robertdebock)

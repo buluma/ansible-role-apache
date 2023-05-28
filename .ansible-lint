@@ -12,6 +12,8 @@ exclude_paths:
   - ./.github
   - ./requirements.yml
 
-warn_list:
-  - no-free-form
-  - no-changed-when
+skip_list:
+  - yaml[truthy]
+
+enable_list:
+  - name[prefix]

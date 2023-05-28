@@ -1,12 +1,13 @@
 ---
-image: "buluma/github-action-molecule:5.0.4"
+image: "buluma/github-action-molecule:5.0.7"
 
 variables:
   PY_COLORS: 1
 
 molecule:
   script:
-    - molecule test
+    - if [ -f tox.ini ] ; then tox ; fi
+    - if [ ! -f tox.ini ] ; then molecule test ; fi
   rules:
     - if: $CI_COMMIT_REF_NAME == "master"
   parallel:
@@ -17,25 +18,25 @@ molecule:
         tag: "8"
       - image: "enterpriselinux"
         tag: "latest"
-      - image: "fedora"
+      - image: "fedora-systemd"
         tag: "36"
-      - image: "fedora"
+      - image: "fedora-systemd"
+        tag: "37"
+      - image: "fedora-systemd"
         tag: "latest"
-      - image: "fedora"
-        tag: "rawhide"
       - image: "amazonlinux"
         tag: "1"
       - image: "amazonlinux"
         tag: "latest"
-      - image: "debian"
+      - image: "debian-systemd"
         tag: "latest"
-      - image: "debian"
+      - image: "debian-systemd"
         tag: "bookworm"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "latest"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "focal"
-      - image: "ubuntu"
+      - image: "docker-ubuntu-systemd"
         tag: "bionic"
 
 galaxy:
