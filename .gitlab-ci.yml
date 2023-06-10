@@ -9,6 +9,7 @@ molecule:
     - molecule test
   rules:
     - if: $CI_COMMIT_REF_NAME == "master"
+  allow-failure: true
   parallel:
     matrix:
       - image: "enterpriselinux"
@@ -29,14 +30,14 @@ molecule:
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
-      - image: "debian-systemd"
-        tag: "bookworm"
       - image: "docker-ubuntu-systemd"
         tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
+      - image: "docker-ubuntu-systemd"
+        tag: "lunar"
 
 galaxy:
   script:

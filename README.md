@@ -34,7 +34,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
     - role: buluma.apache
 ```
 
-The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/main/molecule/default/prepare.yml):
+The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
@@ -51,7 +51,7 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 
 ## [Role Variables](#role-variables)
 
-The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/main/defaults/main.yml):
+The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/master/defaults/main.yml):
 
 ```yaml
 ---
@@ -119,7 +119,7 @@ apache_packages_state: present
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-apache/blob/main/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-apache/blob/master/requirements.txt).
 
 ## [State of used roles](#state-of-used-roles)
 
@@ -134,6 +134,7 @@ The following roles are used to prepare a system. You can prepare your system in
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
+
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-apache/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)

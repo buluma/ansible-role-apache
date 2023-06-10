@@ -4,8 +4,9 @@
 #
 
 on:
-  - push
-
+  push:
+    paths:
+      - '.github/workflows/requirements2png.yml'
 name: Ansible Graphviz
 
 jobs:
@@ -19,7 +20,7 @@ jobs:
         with:
           path: ${{ github.repository }}
       - name: create png
-        uses: buluma/graphviz-action@1.0.0  # TODO: Update action
+        uses: buluma/graphviz-action@1.0.0 # TODO: Update action
       - name: Commit files
         run: |
           cd ${{ github.repository }}
