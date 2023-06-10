@@ -9,7 +9,7 @@ molecule:
     - molecule test
   rules:
     - if: $CI_COMMIT_REF_NAME == "master"
-  allow-failure: true
+  allow_failure: true
   parallel:
     matrix:
       - image: "enterpriselinux"
