@@ -1,6 +1,6 @@
 ---
 name: Dependabot auto-approve
-on: 
+on:
   pull_request:
   workflow_dispatch:
 
