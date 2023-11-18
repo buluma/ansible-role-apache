@@ -12,13 +12,8 @@ jobs:
   build:
     runs-on: "ubuntu-20.04"
     steps:
-      - uses: "actions/checkout@master"
       - name: "TODO to Issue"
-<<<<<<< HEAD
         uses: "alstr/todo-to-issue-action@v2.3"  # TODO: Update buluma/todo-to-issue-action@v1.0.1 @buluma
-=======
-        uses: "alstr/todo-to-issue-action@v4.11" # TODO: Update buluma/todo-to-issue-action@v1.0.1 @buluma
->>>>>>> bf68e9038693bf441bc42b5b5df5bfbe42d8c32a
         id: "todo"
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
