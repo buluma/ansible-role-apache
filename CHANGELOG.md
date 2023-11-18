@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.2...HEAD)
 
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#15](https://github.com/buluma/ansible-role-apache/issues/15)
+
 **Merged pull requests:**
 
 - Bump buluma/molecule-action from 5.0.8 to 5.0.9 [\#22](https://github.com/buluma/ansible-role-apache/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
