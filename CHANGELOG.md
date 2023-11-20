@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-apache/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.3...HEAD)
+
+**Merged pull requests:**
+
+- Bump alstr/todo-to-issue-action from 2.3 to 4.11 [\#23](https://github.com/buluma/ansible-role-apache/pull/23) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.1.3](https://github.com/buluma/ansible-role-apache/tree/0.1.3) (2023-11-18)
 
 [Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.2...0.1.3)
