@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Bump alstr/todo-to-issue-action from 2.3 to 4.11 [\#29](https://github.com/buluma/ansible-role-apache/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump alstr/todo-to-issue-action from 2.3 to 4.11 [\#27](https://github.com/buluma/ansible-role-apache/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.4](https://github.com/buluma/ansible-role-apache/tree/0.1.4) (2023-11-23)
