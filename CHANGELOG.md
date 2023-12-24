@@ -35,7 +35,6 @@
 
 - Bump buluma/molecule-action from 5.0.8 to 5.0.9 [\#22](https://github.com/buluma/ansible-role-apache/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#20](https://github.com/buluma/ansible-role-apache/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump alstr/todo-to-issue-action from 4.10 to 4.11 [\#19](https://github.com/buluma/ansible-role-apache/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 3 to 4 [\#18](https://github.com/buluma/ansible-role-apache/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 5.0.7 to 5.0.8 [\#17](https://github.com/buluma/ansible-role-apache/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump alstr/todo-to-issue-action from 2.3 to 4.10 [\#16](https://github.com/buluma/ansible-role-apache/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -54,6 +53,7 @@
 
 **Merged pull requests:**
 
+- Bump alstr/todo-to-issue-action from 4.10 to 4.11 [\#19](https://github.com/buluma/ansible-role-apache/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.3 to 1.0.4 [\#2](https://github.com/buluma/ansible-role-apache/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.1](https://github.com/buluma/ansible-role-apache/tree/0.1.1) (2022-03-22)
