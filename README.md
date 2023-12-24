@@ -1,10 +1,10 @@
-# [Ansible role apache](#apache)
+# Ansible role [apache](https://galaxy.ansible.com/ui/standalone/roles/buluma/apache/documentation)
 
 Apache 2.x for Linux.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-apache/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-apache/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-apache/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-apache/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-apache.svg)](https://github.com/buluma/ansible-role-apache/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/apache)](https://galaxy.ansible.com/ui/standalone/roles/buluma/apache/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -163,13 +163,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-apache/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-apache/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
