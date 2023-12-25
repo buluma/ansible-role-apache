@@ -7,6 +7,15 @@ name: "TODO 2 Issue"
 
 on:
   push:
+    branches:
+      - master
+      - main
+      - testing
+    paths-ignore:
+      - '**/README.md'
+      - '**/CHANGELOG.md'
+    tags_ignore:
+      - '*'
 
 jobs:
   build:
@@ -14,7 +23,7 @@ jobs:
     steps:
       - uses: "actions/checkout@master"
       - name: "TODO to Issue"
-        uses: "alstr/todo-to-issue-action@v4.11"  # TODO: Update buluma/todo-to-issue-action@v1.0.1 @buluma
+        uses: "alstr/todo-to-issue-action@v2.3"  # TODO: Update buluma/todo-to-issue-action@v1.0.1 @buluma
         id: "todo"
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
