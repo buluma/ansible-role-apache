@@ -6,6 +6,7 @@
 
 **Closed issues:**
 
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#31](https://github.com/buluma/ansible-role-apache/issues/31)
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#28](https://github.com/buluma/ansible-role-apache/issues/28)
 
 ## [0.1.5](https://github.com/buluma/ansible-role-apache/tree/0.1.5) (2023-12-24)
