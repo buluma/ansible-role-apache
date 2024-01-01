@@ -1,13 +1,17 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-apache/tree/HEAD)
+## [0.1.6](https://github.com/buluma/ansible-role-apache/tree/0.1.6) (2023-12-28)
 
-[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.5...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.5...0.1.6)
 
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#31](https://github.com/buluma/ansible-role-apache/issues/31)
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#28](https://github.com/buluma/ansible-role-apache/issues/28)
+
+**Merged pull requests:**
+
+- Bump buluma/todo-to-issue-action from 2.0.0 to 2.0.1 [\#32](https://github.com/buluma/ansible-role-apache/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.5](https://github.com/buluma/ansible-role-apache/tree/0.1.5) (2023-12-24)
 
