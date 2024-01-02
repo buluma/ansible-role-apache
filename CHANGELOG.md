@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-apache/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.6...HEAD)
+
+**Closed issues:**
+
+- Update action [\#14](https://github.com/buluma/ansible-role-apache/issues/14)
+
 ## [0.1.6](https://github.com/buluma/ansible-role-apache/tree/0.1.6) (2023-12-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-apache/compare/0.1.5...0.1.6)
