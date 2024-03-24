@@ -47,8 +47,6 @@ jobs:
       matrix:
         config:
           - image: "enterpriselinux"
-            tag: "7"
-          - image: "enterpriselinux"
             tag: "8"
           - image: "enterpriselinux"
             tag: "latest"
@@ -62,8 +60,6 @@ jobs:
             tag: "1"
           - image: "amazonlinux"
             tag: "latest"
-          - image: "amazonlinux"
-            tag: "2023"
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
@@ -74,6 +70,10 @@ jobs:
             tag: "focal"
           - image: "docker-ubuntu-systemd"
             tag: "bionic"
+          - image: "docker-ubuntu-systemd"
+            tag: "lunar"
+          - image: "docker-ubuntu-systemd"
+            tag: "noble"
     steps:
       - name: Checkout Role
         uses: actions/checkout@v4
@@ -95,7 +95,7 @@ jobs:
       - uses: "actions/checkout@master"
       - name: Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1
+        uses: dependabot/fetch-metadata@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Approve a PR

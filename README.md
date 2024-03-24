@@ -143,11 +143,11 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|all|
-|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
-|[Amazon](https://hub.docker.com/repository/docker/buluma/amazonlinux/general)|all|
-|[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
-|[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
+|[Amazon](https://hub.docker.com/r/buluma/amazonlinux)|all|
+|[Debian](https://hub.docker.com/r/buluma/debian)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
 The minimum version of Ansible required is 2.12, tests have been done to:
 
