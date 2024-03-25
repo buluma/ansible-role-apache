@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump dependabot/fetch-metadata from 1 to 2 [\#41](https://github.com/buluma/ansible-role-apache/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#40](https://github.com/buluma/ansible-role-apache/pull/40) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#39](https://github.com/buluma/ansible-role-apache/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#38](https://github.com/buluma/ansible-role-apache/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
