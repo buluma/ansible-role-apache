@@ -26,7 +26,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
   pre_tasks:
     - name: Update apt cache.
-      apt: update_cache=yes cache_valid_time=600
+      apt: update_cache=true cache_valid_time=600
       when: ansible_os_family == 'Debian'
       changed_when: false
 
@@ -40,8 +40,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  gather_facts: no
-  become: yes
+  gather_facts: false
+  become: true
 
   roles:
     - role: buluma.bootstrap
@@ -105,8 +105,8 @@ apache_mods_disabled: []
 # Set initial apache state. Recommended values: `started` or `stopped`
 apache_state: started
 
-# Set initial apache service status. Recommended values: `yes` or `no`
-apache_enabled: yes
+# Set initial apache service status. Recommended values: `true` or `false`
+apache_enabled: true
 
 # Set apache state when configuration changes are made. Recommended values:
 # `restarted` or `reloaded`
