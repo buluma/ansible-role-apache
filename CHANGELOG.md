@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-apache/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-apache/compare/24.3.31...HEAD)
+
+**Merged pull requests:**
+
+- Bump docker/login-action from 3.2.0 to 3.3.0 [\#44](https://github.com/buluma/ansible-role-apache/pull/44) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-apache/tree/24.3.31) (2024-03-31)
 
 [Full Changelog](https://github.com/buluma/ansible-role-apache/compare/24.2.0...24.3.31)
@@ -92,7 +100,6 @@
 - Bump buluma/molecule-action from 5.0.5 to 5.0.6 [\#12](https://github.com/buluma/ansible-role-apache/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 5.0.4 to 5.0.5 [\#11](https://github.com/buluma/ansible-role-apache/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 5.0.1 to 5.0.4 [\#8](https://github.com/buluma/ansible-role-apache/pull/8) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.3 to 1.0.4 [\#2](https://github.com/buluma/ansible-role-apache/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.2](https://github.com/buluma/ansible-role-apache/tree/0.1.2) (2022-04-23)
 
@@ -101,6 +108,10 @@
 **Closed issues:**
 
 - Add to tracker [\#1](https://github.com/buluma/ansible-role-apache/issues/1)
+
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.3 to 1.0.4 [\#2](https://github.com/buluma/ansible-role-apache/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.1](https://github.com/buluma/ansible-role-apache/tree/0.1.1) (2022-03-22)
 
