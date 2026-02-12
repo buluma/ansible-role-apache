@@ -7,13 +7,9 @@ exclude_paths:
   - molecule/default/converge.yml
   - molecule/default/verify.yml
   - molecule/default/collections.yml
-  - .tox
   - .cache
   - .github
   - requirements.yml
 
 enable_list:
   - name[prefix]
-skip_list:
-  - no-free-form
-  - no-changed-when
