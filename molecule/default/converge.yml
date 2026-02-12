@@ -18,4 +18,4 @@
       changed_when: false
 
   roles:
-    - role: ansible-role-apache
+    - role: buluma.apache
