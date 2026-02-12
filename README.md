@@ -31,7 +31,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
       changed_when: false
 
   roles:
-    - role: ansible-role-apache
+    - role: buluma.apache
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/prepare.yml):
