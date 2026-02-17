@@ -19,5 +19,10 @@ jobs:
         uses: "Naturalclar/issue-action@v2.0.2"
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["bug", "error"], "labels": ["BUG"], "assignees": ["buluma"]}, {"keywords": ["help", "guidance"], "labels": ["help-wanted"], "assignees": ["buluma"]}, {"keywords": ["feature", "request"], "labels": ["enhancement"], "assignees": ["buluma"]}]'
+          parameters: |
+            [
+              {"keywords": ["bug", "error"], "labels": ["BUG"], "assignees": ["buluma"]},
+              {"keywords": ["help", "guidance"], "labels": ["help-wanted"], "assignees": ["buluma"]},
+              {"keywords": ["feature", "request"], "labels": ["enhancement"], "assignees": ["buluma"]}
+            ]
           github-token: ${{ secrets.GITHUB_TOKEN }}
