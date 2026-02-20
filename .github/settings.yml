@@ -5,4 +5,4 @@
 repository:
   description: Apache 2.x for Linux.
   homepage: https://buluma.github.io/
-  topics: web, apache, webserver, html, httpd, ansible, molecule, tox, playbook
+  topics: web, apache, webserver, html, httpd, ansible, molecule, playbook

@@ -5,7 +5,7 @@
     regexp: "{{ item.regexp }}"
     line: "{{ item.line }}"
     state: present
-    mode: '0644'
+    mode: "0644"
   with_items: "{{ apache_ports_configuration_items }}"
   notify: Restart apache
 
@@ -14,7 +14,7 @@
     src: "{{ apache_server_root }}/mods-available/{{ item }}"
     dest: "{{ apache_server_root }}/mods-enabled/{{ item }}"
     state: link
-    mode: '0644'
+    mode: "0644"
   with_items: "{{ apache_mods_enabled }}"
   notify: Restart apache
 
@@ -26,7 +26,8 @@
   notify: Restart apache
 
 - name: configure-Debian | Check whether certificates defined in vhosts exist.
-  ansible.builtin.stat: "path={{ item.certificate_file }}"
+  ansible.builtin.stat:
+    path: "{{ item.certificate_file }}"
   register: apache_ssl_certificates
   with_items: "{{ apache_vhosts_ssl }}"
 
@@ -36,7 +37,7 @@
     dest: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts_filename }}"
     owner: root
     group: root
-    mode: '0644'
+    mode: "0644"
   notify: Restart apache
   when: apache_create_vhosts | bool
 
@@ -45,7 +46,7 @@
     src: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts_filename }}"
     dest: "{{ apache_conf_path }}/sites-enabled/{{ apache_vhosts_filename }}"
     state: link
-    mode: '0644'
+    mode: "0644"
   notify: Restart apache
   when: apache_create_vhosts | bool
 
