@@ -27,12 +27,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v6
-      - name: ansible-lint
-        uses: ansible/ansible-lint@v26.1.1
-
-  molecule:
+      - name: Checkout Role
+        uses: actions/checkout@v4
+      - name: Run Ansible-lint
+        uses: ansible/ansible-lint@v24.9.0
+  test:
     needs:
       - lint
     runs-on: ubuntu-latest
