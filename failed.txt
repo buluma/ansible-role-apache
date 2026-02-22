@@ -1,2 +1,3 @@
 ansible-role-apache
 ansible-role-apache
+ansible-role-apache [generator]: ERROR: Unhandled exception when retrieving 'DEFAULT_LOCAL_TMP': [Errno 1] Operation not permitted: '/Users/shadowwalker/.ansible/tmp/ansible-local-820967e_v8c8g'
