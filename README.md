@@ -11,6 +11,7 @@ Apache 2.x for Linux.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
+---
   - name: Converge
     hosts: all
     become: true
@@ -38,6 +39,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/prepare.yml):
 
 ```yaml
+---
   - name: Prepare
     hosts: all
     gather_facts: false
@@ -54,6 +56,7 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/master/defaults/main.yml):
 
 ```yaml
+---
 apache_enablerepo: ""
 
 apache_listen_ip: "*"
