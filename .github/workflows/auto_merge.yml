@@ -1,4 +1,3 @@
----
 # .github/workflows/automerge.yml
 
 name: Dependabot auto-merge

@@ -1,23 +1,22 @@
----
-- name: Converge
-  hosts: all
-  become: true
+  - name: Converge
+    hosts: all
+    become: true
 
-  vars:
-    apache_listen_port_ssl: 443
-    apache_create_vhosts: true
-    apache_vhosts_filename: "vhosts.conf"
-    apache_vhosts:
-      - servername: "example.com"
-        documentroot: "/var/www/vhosts/example_com"
+    vars:
+      apache_listen_port_ssl: 443
+      apache_create_vhosts: true
+      apache_vhosts_filename: "vhosts.conf"
+      apache_vhosts:
+        - servername: "example.com"
+          documentroot: "/var/www/vhosts/example_com"
 
-  pre_tasks:
-    - name: Update apt cache.
-      ansible.builtin.apt:
-        update_cache: true
-        cache_valid_time: 600
-      when: ansible_os_family == 'Debian'
-      changed_when: false
+    pre_tasks:
+      - name: Update apt cache.
+        ansible.builtin.apt:
+          update_cache: true
+          cache_valid_time: 600
+        when: ansible_os_family == 'Debian'
+        changed_when: false
 
-  roles:
-    - role: buluma.apache
+    roles:
+      - role: buluma.apache

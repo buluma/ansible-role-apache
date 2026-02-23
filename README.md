@@ -11,42 +11,40 @@ Apache 2.x for Linux.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
-  become: true
+  - name: Converge
+    hosts: all
+    become: true
 
-  vars:
-    apache_listen_port_ssl: 443
-    apache_create_vhosts: true
-    apache_vhosts_filename: "vhosts.conf"
-    apache_vhosts:
-      - servername: "example.com"
-        documentroot: "/var/www/vhosts/example_com"
+    vars:
+      apache_listen_port_ssl: 443
+      apache_create_vhosts: true
+      apache_vhosts_filename: "vhosts.conf"
+      apache_vhosts:
+        - servername: "example.com"
+          documentroot: "/var/www/vhosts/example_com"
 
-  pre_tasks:
-    - name: Update apt cache.
-      ansible.builtin.apt:
-        update_cache: true
-        cache_valid_time: 600
-      when: ansible_os_family == 'Debian'
-      changed_when: false
+    pre_tasks:
+      - name: Update apt cache.
+        ansible.builtin.apt:
+          update_cache: true
+          cache_valid_time: 600
+        when: ansible_os_family == 'Debian'
+        changed_when: false
 
-  roles:
-    - role: buluma.apache
+    roles:
+      - role: buluma.apache
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-apache/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
-  gather_facts: false
-  become: true
+  - name: Prepare
+    hosts: all
+    gather_facts: false
+    become: true
 
-  roles:
-    - role: buluma.bootstrap
+    roles:
+      - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -56,7 +54,6 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-apache/blob/master/defaults/main.yml):
 
 ```yaml
----
 apache_enablerepo: ""
 
 apache_listen_ip: "*"
