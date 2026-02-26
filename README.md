@@ -77,8 +77,8 @@ apache_global_vhost_settings: |
 apache_vhosts:
   # Additional properties:
   # 'serveradmin, serveralias, allow_override, options, extra_parameters'.
-- servername: "local.dev"
-  documentroot: "/var/www/html"
+  - servername: "local.dev"
+    documentroot: "/var/www/html"
 
 apache_allow_override: "All"
 apache_options: "-Indexes +FollowSymLinks"
@@ -100,8 +100,8 @@ apache_ssl_cipher_suite: "AES256+EECDH:AES256+EDH"
 
 # Only used on Debian/Ubuntu.
 apache_mods_enabled:
-- rewrite.load
-- ssl.load
+  - rewrite.load
+  - ssl.load
 apache_mods_disabled: []
 # Set initial apache state. Recommended values: `started` or `stopped`
 apache_state: started
