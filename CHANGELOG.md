@@ -6,6 +6,8 @@
 
 **Merged pull requests:**
 
+- Bump actions/checkout from 4 to 6 [\#46](https://github.com/buluma/ansible-role-apache/pull/46) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 24.7.0 to 24.9.0 [\#45](https://github.com/buluma/ansible-role-apache/pull/45) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump docker/login-action from 3.2.0 to 3.3.0 [\#44](https://github.com/buluma/ansible-role-apache/pull/44) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-apache/tree/24.3.31) (2024-03-31)
