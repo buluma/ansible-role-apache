@@ -5,22 +5,6 @@ galaxy_info:
   description: "Apache 2.x for Linux."
   license: Apache-2.0
   min_ansible_version: "2.12"
-  platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Suse
-      versions:
-        - all
   galaxy_tags:
     - web
     - apache
